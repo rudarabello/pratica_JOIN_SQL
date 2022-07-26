@@ -1,0 +1,7 @@
+SELECT
+  users.id,
+  users.name,
+  cities.name AS cities
+FROM
+  public.users
+  JOIN public.cities ON users."cityId" = cities.id;
